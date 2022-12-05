@@ -2,16 +2,6 @@
 
 if __name__ == "__main__":
 
-    import sys
+    from sys import argv
 
-    args = sys.argv[1:]
-
-    count = len(args)
-
-    sum = 0
-
-    for i in range(count):
-
-        sum = sum + int(args[i])
-
-    print(sum)
+    print("{}".format(sum([int(x) for x in argv[1:]])))
