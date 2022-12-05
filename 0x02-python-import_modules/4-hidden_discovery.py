@@ -2,18 +2,10 @@
 
 if __name__ == "__main__":
 
-    import dis
-
     import hidden_4
 
-    lst = dir(hidden_4)
+    for s in dir(hidden_4):
 
-    lst.sort()
+        if s[0:2] != "__":
 
-    for i in range(len(lst)):
-
-        str = lst[i]
-
-        if str[:2] != '__':
-
-            print(str)
+            print(s)
