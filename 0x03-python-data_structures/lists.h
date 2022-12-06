@@ -1,25 +1,46 @@
-def print_list_integer(my_list=[]):
+#ifndef LISTS_H
+#define LISTS_H
 
-def element_at(my_list, idx):
+#include<stdlib.h>
 
-def replace_in_list(my_list, idx, element):
+/**
 
-def print_reversed_list_integer(my_list=[]):
+ * struct listint_s - singly linked list
 
-def new_in_list(my_list, idx, element):
+ * @n: integer
 
-def no_c(my_string):
+ * @next: points to the next node
 
-def print_matrix_integer(matrix=[[]]):
+ *
 
-def add_tuple(tuple_a=(), tuple_b=()):
+ * Description: singly linked list node structure
 
-def multiple_returns(sentence):
+ * for Holberton project
 
-def max_integer(my_list=[]):
+ */
 
-def divisible_by_2(my_list=[]):
+typedef struct listint_s
 
-def delete_at(my_list=[], idx=0):
+{
+
+	int n;
+
+	struct listint_s *next;
+
+} listint_t;
+
+
+
+size_t print_listint(const listint_t *h);
+
+listint_t *add_nodeint_end(listint_t **head, const int n);
+
+void free_listint(listint_t *head);
+
+
 
 int is_palindrome(listint_t **head);
+
+
+
+#endif /* LISTS_H */
