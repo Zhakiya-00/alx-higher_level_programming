@@ -10,8 +10,6 @@ def best_score(a_dictionary):
 
         return None
 
-
-
     ret = list(a_dictionary.keys())[0]
 
     big = a_dictionary[ret]
