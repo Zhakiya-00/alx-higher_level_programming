@@ -2,28 +2,28 @@
 
 if __name__ == "__main__":
 
-    import sys
+    from sys import argv
 
-    arguments = sys.argv[1:]
+    # printing command line args
 
-    count = len(arguments)
+    while (len(argv) > 1):
 
-    if count == 0:
+        if (len(argv) == 2):
 
-        print("0 arguments.")
+            print("{} argument:".format(len(argv) - 1))
 
-    elif count == 1:
+            print("{}: {}".format(len(argv) - 1, argv[1]))
 
-        print("1 argument:")
+            exit()
 
-        for i in range(count):
+        else:
 
-            print("{}: {}".format(i + 1, arguments[i]))
+            print("{} arguments:".format(len(argv) - 1))
 
-    else:
+            for i in range(1, len(argv)):
 
-        print("{} arguments:".format(count))
+                print("{}: {}".format(i, argv[i]))
 
-        for i in range(count):
+            exit()
 
-            print("{}: {}".format(i + 1, arguments[i]))
+    print("0 arguments.")
