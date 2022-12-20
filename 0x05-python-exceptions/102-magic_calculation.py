@@ -17,9 +17,7 @@ def magic_calculation(a, b):
 
             else:
 
-                result += (a ** b) / i
-
-        except:
+                result += (a ** b) / 1
 
             result = b + a
 
