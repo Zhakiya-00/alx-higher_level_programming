@@ -32,8 +32,8 @@ queen must be placed on the chessboard.
 
 import sys
 
-def init_board(n):
 
+def init_board(n):
 
     """Initialize an `n`x`n` sized chessboard with 0's."""
 
@@ -45,8 +45,8 @@ def init_board(n):
 
     return (board)
 
-def board_deepcopy(board):
 
+def board_deepcopy(board):
 
     """Return a deepcopy of a chessboard."""
 
@@ -56,8 +56,8 @@ def board_deepcopy(board):
 
     return (board)
 
-def get_solution(board):
 
+def get_solution(board):
 
     """Return the list of lists representation of a solved chessboard."""
 
@@ -75,8 +75,8 @@ def get_solution(board):
 
     return (solution)
 
-def xout(board, row, col):
 
+def xout(board, row, col):
 
     """X out spots on a chessboard.
 
@@ -174,8 +174,8 @@ def xout(board, row, col):
 
         c -= 1
 
-def recursive_solve(board, row, queens, solutions):
 
+def recursive_solve(board, row, queens, solutions):
 
     """Recursively solve an N-queens puzzle.
 
@@ -217,6 +217,7 @@ def recursive_solve(board, row, queens, solutions):
 
     return (solutions)
 
+
 if __name__ == "__main__":
 
     if len(sys.argv) != 2:
@@ -226,7 +227,6 @@ if __name__ == "__main__":
         sys.exit(1)
 
     if sys.argv[1].isdigit() is False:
-
         print("N must be a number")
 
         sys.exit(1)
