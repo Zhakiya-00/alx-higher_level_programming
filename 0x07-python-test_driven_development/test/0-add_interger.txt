@@ -1,6 +1,6 @@
 # 0-add_integer.txt
 
-# sagebeme
+# zhakiya
 
 
 
@@ -249,5 +249,3 @@ And again with NaN numbers.
     Traceback (most recent call last):
 
     ValueError: cannot convert float NaN to integer
-
-
