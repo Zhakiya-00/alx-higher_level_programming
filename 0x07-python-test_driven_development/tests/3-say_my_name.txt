@@ -1,6 +1,6 @@
 # 3-say_my_name.txt
 
-# Brennan D Baraban <375@holbertonschool.com>
+# Zhakiya Yusuf
 
 
 
