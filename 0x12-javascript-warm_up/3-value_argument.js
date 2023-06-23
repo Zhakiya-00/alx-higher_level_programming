@@ -2,7 +2,7 @@
 
 const process = require('process');
 
-let args = process.argv[2];
+const args = process.argv[2];
 
 if (args === undefined){
         console.log("No arguements");}
