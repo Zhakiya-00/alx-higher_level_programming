@@ -1,3 +1,11 @@
 #!/usr/bin/node
 
-console.log(typeof process.argv[2] === 'undefined' ? 'No argument' : process.argv[2]);
+const process = require('process');
+
+let args = process.argv[2];
+
+if (args === undefined){
+        console.log("No arguements");}
+else{
+        console.log(args);}
+~                            
